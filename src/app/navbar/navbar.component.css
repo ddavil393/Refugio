@@ -1,0 +1,13 @@
+.navbar-brand img {
+    width: 59px; 
+    margin-right: 10px; 
+    border-radius: 50px;
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 15px; 
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold; 
+}
