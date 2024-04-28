@@ -1,0 +1,22 @@
+.img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+nav.navbar span.title{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    color: white;
+    font-size: large;
+}
+nav.navbar{
+    background-color: #12507a;
+}
+li.nav-item a.nav-link{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    color: white;
+}
+li.nav-item a:hover{
+    color: #63a5c2;
+}
