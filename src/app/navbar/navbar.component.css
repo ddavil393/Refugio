@@ -20,3 +20,14 @@ li.nav-item a.nav-link{
 li.nav-item a:hover{
     color: #63a5c2;
 }
+
+.title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: small;
+}
+
+.nav-iteam{
+    font-size: smaller;
+    color: white;
+}
