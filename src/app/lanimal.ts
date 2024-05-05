@@ -1,4 +1,4 @@
-export interface Animales{
+export interface Animal{
     nombre:string;
     edad:string;
     color:string;

@@ -9,9 +9,7 @@ nav.navbar span.title{
     color: white;
     font-size: large;
 }
-nav.navbar{
-    background-color: #12507a;
-}
+
 li.nav-item a.nav-link{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
