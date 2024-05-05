@@ -7,3 +7,4 @@ export interface Animal {
     price:number;
 
 }
+
