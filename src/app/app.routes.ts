@@ -1,13 +1,13 @@
 import { Routes } from '@angular/router';
 import path from 'path';
-import { AnimalesComponent } from './animales/animales.component';
-import { AboutComponent } from './about/about.component';
-import { HomeComponent } from './home/home.component';
+import { AnimalesComponent } from './components/animales/animales.component';
+import { AboutComponent } from './components/about/about.component';
+import { HomeComponent } from './components/home/home.component';
 
 export const routes: Routes = [
     {path: 'home', component: HomeComponent},
     {path: 'about', component: AboutComponent},
-    {path: 'heroe', component: AnimalesComponent},
+    {path: 'animales', component: AnimalesComponent},
 
 
     {path: '**', pathMatch: 'full', redirectTo:'home'}

@@ -8,10 +8,6 @@
     border-radius: 10px;
     padding: 50px;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-    background-image: url(../../assets/img/Perrito.png);
-    background-size: 9px;
-    background-repeat: no-repeat;
-    size: 100%;
   }
   .jumbotron h1 {
     font-size: 3.5rem;
