@@ -9,11 +9,11 @@ import { take } from 'rxjs'
 })
 export class AnimalesService {
 
-  urlAPI:string="https://homework.free.beeceptor.com/";
+   urlAPI:string="";
 
   constructor(private http: HttpClient){}
 
   retornar(){
-    return this.http.get(this.urlAPI).pipe(take(1));
+     return this.http.get(this.urlAPI).pipe(take(1));
   }
 }

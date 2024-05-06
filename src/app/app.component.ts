@@ -4,10 +4,14 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { AnimalesComponent } from './components/animales/animales.component';
 
+import { RegistrarComponent } from './components/registrar/registrar.component';
+import { CitasregistrasComponent } from './components/citasregistras/citasregistras.component';
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterModule, NavbarComponent, HomeComponent, RouterOutlet, AnimalesComponent],
+  imports: [RouterModule, NavbarComponent, HomeComponent, RouterOutlet, 
+            AnimalesComponent, RegistrarComponent,CitasregistrasComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
