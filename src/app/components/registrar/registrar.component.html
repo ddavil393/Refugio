@@ -1,0 +1,26 @@
+<div id="container">
+    <h2>Formulario de adopción</h2>
+    <p>
+        <span>Nombre:</span>
+        <input type="text" class="form-control" [(ngModel)]="cliente.nombre">
+    </p>
+    <p>
+        <span>ID:</span>
+        <input type="text" class="form-control" [(ngModel)]="cliente.cif">
+    </p>
+    <p>
+        <span>Dirección:</span>
+        <input type="text" class="form-control" [(ngModel)]="cliente.direccion">
+    </p>
+    <p>
+        <span>Fecha de cita:</span>
+        <input type="date" class="form-control" [(ngModel)]="cliente.fechaCita">
+    </p>
+    <p>
+        <span>Hora de cita:</span>
+        <input type="time" class="form-control" [(ngModel)]="cliente.horaCita">
+    </p>
+    <p>
+        <button type="button" class="btn btn-primary" (click)="nuevoCliente()">Guardar</button>
+    </p>
+</div>
