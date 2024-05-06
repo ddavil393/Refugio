@@ -1,17 +1,16 @@
 <div id="principal" class="row">
-    <!--<div class="card-group p-1">-->
-        <!-- row row-cols-1 row-cols-md-5-->
         @for (item of array; track item){
-            <!--<div class="col">-->
                 <div class="card col-sm-2">
                     <img [src]="item.image" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{item.name}}</h5>
-                        <h5 class="card-subtitle">${{item.price}}</h5>
+                        <h5 class="card-subtitle">{{item.age}}</h5>
+                        <p class="card-text">{{item.color}}</p>
+                        <p class="card-text">{{item.race}}</p>
+                        <p class="card-text">{{item.time_at_the_shelter}}</p>
                         <p class="card-text">{{item.description}}</p>
+                        <p class="card-text">{{item.image}}</p>
                     </div>
                 </div>
-            <!--</div>-->
         }
-    <!--</div>-->
 </div>

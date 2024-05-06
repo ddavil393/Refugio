@@ -9,7 +9,7 @@ import { take } from 'rxjs'
 })
 export class AnimalesService {
 
-  urlAPI:string="https://elec2.free.beeceptor.com";
+  urlAPI:string="https://animales.free.beeceptor.com";
 
   constructor(private http: HttpClient){}
 
