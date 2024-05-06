@@ -1,24 +1,24 @@
 <div class="cont">
     <div class="container">
-        <h2>Formulario de adopción</h2>
+        <h1 class="title1">Formulario de adopción</h1>
         <p>
-            <span>Nombre:</span>
+            <span class="title" id="name">Nombre:</span>
             <input type="text" class="form-control" [(ngModel)]="cliente.nombre">
         </p>
         <p>
-            <span>ID:</span>
+            <span class="title">ID:</span>
             <input type="text" class="form-control" [(ngModel)]="cliente.cif">
         </p>
         <p>
-            <span>Dirección:</span>
+            <span class="title">Dirección:</span>
             <input type="text" class="form-control" [(ngModel)]="cliente.direccion">
         </p>
         <p>
-            <span>Fecha de cita:</span>
+            <span class="title">Fecha de cita:</span>
             <input type="date" class="form-control" [(ngModel)]="cliente.fechaCita">
         </p>
         <p>
-            <span>Hora de cita:</span>
+            <span class="title">Hora de cita:</span>
             <input type="time" class="form-control" [(ngModel)]="cliente.horaCita">
         </p>
         <p>
