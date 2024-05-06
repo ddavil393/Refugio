@@ -6,12 +6,13 @@ import { AnimalesComponent } from './components/animales/animales.component';
 
 import { RegistrarComponent } from './components/registrar/registrar.component';
 import { CitasregistrasComponent } from './components/citasregistras/citasregistras.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterModule, NavbarComponent, HomeComponent, RouterOutlet, 
-            AnimalesComponent, RegistrarComponent,CitasregistrasComponent],
+            AnimalesComponent, RegistrarComponent,CitasregistrasComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
