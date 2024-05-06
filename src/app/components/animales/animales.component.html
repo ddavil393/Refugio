@@ -13,7 +13,6 @@
                     </div>
                 </div>
         } -->
-        <h1 class="text-center mb-4">Heroes <small>Marvel y DC</small></h1>
         <div class="row row-cols-1 row-cols-lg-3 g-4">
     
           @for (h of misanimales; track h; let i =$index){
@@ -32,7 +31,7 @@
                 <p class="card-text">{{h.description}}</p>
                 <!-- <p class="card-text"><small class="text-muted">Primera aparición: {{h.aparicion}}</small></p> -->
               </div>
-              <a [routerLink]="['/heroe',i]" class="mb-3 btn btn-outline-primary btn-block">Ver mas</a>
+              <a [routerLink]="['/animales',i]" class="mb-3 btn btn-outline-primary btn-block">Ver mas</a>
             </div>
           </div>
           }

@@ -3,7 +3,6 @@ import { Animal } from "./lanimal";
 export const ANIMAL: Animal[]=[
     
         {
-        "id": 1,
         "name":"Juan" ,
         "age": "40",
         "color": " Gris",
@@ -13,7 +12,7 @@ export const ANIMAL: Animal[]=[
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Vulture_beak_sideview_A.jpg/375px-Vulture_beak_sideview_A.jpg"
         },
         {
-        "id": 2,
+
         "name":"Alvin" ,
         "age": "8 años",
         "color": " Rojizo",
@@ -23,7 +22,7 @@ export const ANIMAL: Animal[]=[
         "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Eastern_Grey_Squirrel_in_St_James%27s_Park%2C_London_-_Nov_2006_edit.jpg"
         },
         {
-        "id": 3,
+
         "name":"Petra" ,
         "age": "1 año",
         "color": " Cafe",
@@ -33,7 +32,7 @@ export const ANIMAL: Animal[]=[
         "image": "https://infotarantulas.com/img/thera_lyco.jpg"
         },
         {
-        "id": 4,
+
         "name":"Sep" ,
         "age": "54 años",
         "color": "Gris",
@@ -43,7 +42,7 @@ export const ANIMAL: Animal[]=[
         "image": "https://www.ngenespanol.com/wp-content/uploads/2023/05/elefantes-turistas-zoolo%CC%81gicos.jpg"
         },
         {
-        "id": 5,
+
         "name":"Diego" ,
         "age": "30 años",
         "color": "Beige ",
@@ -53,7 +52,7 @@ export const ANIMAL: Animal[]=[
         "image": "https://t2.uc.ltmcdn.com/es/posts/2/6/0/que_tienen_los_camellos_en_la_joroba_descubre_la_respuesta_47062_600.webp"
         },
         {
-        "id": 6,
+
         "name":"Judy" ,
         "age": "16 años",
         "color": "Gris ",
@@ -63,7 +62,7 @@ export const ANIMAL: Animal[]=[
         "image": "https://animales.me/wp-content/uploads/2020/04/Conejo-europeo-Oryctolagus-cuniculus-en-libertad.jpg"
         },
         {
-        "id": 7,
+
         "name":"Nick" ,
         "age": "22 años",
         "color": " Rojizo",
@@ -73,7 +72,7 @@ export const ANIMAL: Animal[]=[
         "image": "https://static.wikia.nocookie.net/reinoanimalia/images/8/88/Zorro_rojo_4.png/revision/latest?cb=20130514223627&path-prefix=es"
         },
      {
-        "id": 8,
+
         "name":"Lassie" ,
         "age": "17 años",
         "color": " Blanca con manchas cafes",
@@ -83,7 +82,7 @@ export const ANIMAL: Animal[]=[
         "image": "https://t2.ea.ltmcdn.com/es/posts/7/2/5/lengua_de_la_jirafa_color_tamano_y_curiosidades_26527_600.webp"
         },
      {
-        "id": 9,
+
         "name":"Spock" ,
         "age": "15 años",
         "color": "Gris ",
@@ -93,7 +92,7 @@ export const ANIMAL: Animal[]=[
         "image": "https://static.nationalgeographic.es/files/styles/image_3200/public/01-waq-wildlife-std-NationalGeographic_2682117.webp?w=1600&h=900"
         },
      {
-        "id": 10,
+        
         "name":"Dalton" ,
         "age": "2 años",
         "color": " Negro, blanco y cafe",
@@ -103,7 +102,7 @@ export const ANIMAL: Animal[]=[
         "image": "https://www.zooplus.es/magazine/wp-content/uploads/2017/10/Beagle-1.jpeg"
         },
      {
-        "id":11,
+        
         "name":"Milo" ,
         "age": "4 años",
         "color": " Negro",
@@ -113,7 +112,7 @@ export const ANIMAL: Animal[]=[
         "image": "https://content.elmueble.com/medio/2023/03/09/perro-de-raza-rottweiler_9f7a22a7_230309180127_900x900.jpg"
         },
      {
-        "id": 12,
+        
         "name":"Nala" ,
         "age": "10 años",
         "color": " Rubio/ Castaño",
@@ -123,7 +122,7 @@ export const ANIMAL: Animal[]=[
         "image": "https://www.petfinder.com/static/fa2e191d7177a74dcf257175ef5ffa8e/58bb2/golden-retriever-detail-scaled.webp"
         },
      {
-        "id": 13,
+        
         "name":"Nasky" ,
         "age": "4 años",
         "color": " Negro/ Blanco",
@@ -133,7 +132,7 @@ export const ANIMAL: Animal[]=[
         "image": "https://es.wikipedia.org/wiki/Archivo:Cattledog_Little_Joe.JPG"
         },
      {
-        "id": 14,
+        
         "name":"Coco" ,
         "age": "10 años",
         "color": " Blanco",
@@ -143,7 +142,7 @@ export const ANIMAL: Animal[]=[
         "image": "https://www.thesprucepets.com/thmb/pApY1ZGNtV22Ofd75Q-5hTI10wU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/white-poodle-playing-in-the-yard--182178740-59af2b3fc4124400107c9da3.jpg"
         },
      {
-        "id": 15,
+        
         "name":"Simba" ,
         "age": "2 años",
         "color": "Negro ",

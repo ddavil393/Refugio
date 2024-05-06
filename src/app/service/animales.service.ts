@@ -31,8 +31,8 @@ export class AnimalesService {
     return this.animal[posicion];
   }
 
-  searchUnHeroe(nomheroe:string):number{
-    let index = this.animal.findIndex(p=> p.name === nomheroe);
+  searchUnHeroe(nomanimal:string):number{
+    let index = this.animal.findIndex(p=> p.name === nomanimal);
     return index;
   }
   

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { RouterModule} from '@angular/router';
+import { Router,RouterModule} from '@angular/router';
+
 
 
 @Component({
@@ -11,4 +12,9 @@ import { RouterModule} from '@angular/router';
 })
 export class NavbarComponent {
 
+  constructor(private router:Router){ }
+
+  buscarUnAnimal(name:string){
+    this.router.navigate(['/buscar',name]);
+  }
 }
