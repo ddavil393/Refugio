@@ -17,15 +17,14 @@ export class SearchComponent {
   indice:number=0;
 
   mianimal:Animal={
- 
-    name:"",
-    age:"",
-    color:"",
-    race:"",
-    time_at_the_shelter:"",
-    description:"",
-    image:"",
-
+    id: 0,
+    name: "",
+    age: "",
+    color: "",
+    race: "",
+    time_at_the_shelter: "",
+    description: "",
+    image: "",
   };
 
   constructor(private animalService: AnimalesService,private activatedRouted:ActivatedRoute){
