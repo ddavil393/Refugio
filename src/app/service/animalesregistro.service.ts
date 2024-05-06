@@ -30,10 +30,11 @@ export class AnimalesregistroService {
 
   nuevoCliente(): Cliente{
     return{
-      id: this.clientes.length,
+
       nombre: '',
-      cif:'',
-      direccion: '',
+      apellidos:'',
+      telefono: '',
+      correo: '',
       fechaCita: '',
       horaCita: '',
     };
