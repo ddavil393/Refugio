@@ -15,6 +15,7 @@ export const routes: Routes = [
     {path: 'registrar', component: RegistrarComponent},
     {path: 'animales', component: AnimalesComponent},
     {path: 'animales/:id', component: UnanimalComponent},
+    { path: 'animal/:id', component: UnanimalComponent },
     {path: 'buscar/:nameh', component: SearchComponent},
     {path: 'buscardor/:raceh', component: SearchComponent},
 
