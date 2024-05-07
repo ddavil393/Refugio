@@ -23,7 +23,6 @@ input[type="text"]:focus, input[type="select"]:focus {
 .title{
   font-family: "Ubuntu Sans", sans-serif;
   font-optical-sizing: auto;
-  font-size: 175%;
 }
 
 .title1{
@@ -32,6 +31,8 @@ input[type="text"]:focus, input[type="select"]:focus {
   font-family: "Poetsen One", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 3rem;
+  color: #12507a;
 }
 
 .form-control{

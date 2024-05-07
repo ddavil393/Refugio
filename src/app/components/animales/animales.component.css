@@ -4,9 +4,7 @@
     align-items: start;
     justify-content: space-evenly;
 }
-
 .card {
-    margin: 35px;
     padding: 35px;
     background-color: #fff;
     border-radius: 10px;
@@ -26,7 +24,6 @@
 h1 {
     font-size: 36px;
     color: #333;
-
 }
 
 h2 {
@@ -37,6 +34,10 @@ h2 {
     font-family: "Poetsen One", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 2rem;
+    color: #12507a;
+    padding: 3%;
+    line-height: 1;
 }
 .text{
     font-family: "Ubuntu Sans", sans-serif;
@@ -52,4 +53,9 @@ h2 {
 .btn:hover{
     color: white;
     background-color: #1679AB;
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
 }

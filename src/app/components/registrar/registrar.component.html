@@ -1,5 +1,5 @@
 <div class="container">
-    <h2 class="title1" >Formulario de adopción</h2>
+    <h2 class="title1">Formulario de adopción</h2>
     <p>
         <span class="title">Nombre:</span>
         <input type="text" class="title form-control" [(ngModel)]="cliente.nombre">
@@ -16,10 +16,20 @@
         <span class="title">Correo electrónico:</span>
         <input type="text" class="title form-control" [(ngModel)]="cliente.correo">
     </p>
-    <p>
+    <!--<p>-->
         <span class="title">Fecha de cita:</span>
-        <input type="date" class=" title form-control" [(ngModel)]="cliente.fechaCita">
-    </p>
+        <!--<input type="date" class=" title form-control" [(ngModel)]="cliente.fechaCita">-->
+        <div class="pt-2 pb-3">
+            <mat-form-field>
+                <mat-label>Choose a date</mat-label>
+                <input matInput [matDatepicker]="picker" [(ngModel)]="cliente.fechaCita" >
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+        </div>
+          
+    <!--</p>-->
     <p>
         <span class="title">Hora de cita:</span>
         <input type="time" class="title form-control" [(ngModel)]="cliente.horaCita">
