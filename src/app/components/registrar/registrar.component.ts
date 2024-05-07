@@ -47,6 +47,7 @@ export class RegistrarComponent {
     if (citaOcupada) {
         alert('Lo sentimos, esta fecha y hora ya están ocupadas. Por favor, elige otra.');
     } else {
+      
         this.animalesregistroService.agregarCliente(this.cliente);
         this.cliente = this.animalesregistroService.nuevoCliente();
         alert('¡Cliente registrado exitosamente!');

@@ -1,5 +1,6 @@
 export interface Animal {
-    id:number;
+
+    id : number;
     name:string;
     age: string;
     color:string;

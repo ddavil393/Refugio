@@ -11,7 +11,7 @@ import { ANIMAL } from '../interface/misanimales';
 })
 export class AnimalesService {
 
-  // urlAPI:string="https://animales.free.beeceptor.com/";
+  urlAPI:string="https://homework.free.beeceptor.com/";
 
   // constructor(private http: HttpClient){}
 
@@ -31,8 +31,8 @@ export class AnimalesService {
     return this.animal[posicion];
   }
 
-  searchUnHeroe(nomheroe:string):number{
-    let index = this.animal.findIndex(p=> p.name === nomheroe);
+  searchUnHeroe(nomanimal:string):number{
+    let index = this.animal.findIndex(p=> p.name === nomanimal);
     return index;
   }
   

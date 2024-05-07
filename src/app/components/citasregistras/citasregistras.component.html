@@ -11,19 +11,22 @@
                 <thead>
                     <tr>
                         <th scope="col">Nombre</th>
-                        <th scope="col">CIF</th>
-                        <th scope="col">Direccion</th>
-                        <th scope="col">Grupo</th>
+                        <th scope="col">Apellidos</th>
+                        <th scope="col">Numero de telefono</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Facha de cita</th>
+                        <th scope="col">Hora de la cita</th>
                     </tr>
                 </thead>
                 <tbody>
                     @for (cliente of clientes; track clientes) {
                         <tr>
                             <td>{{cliente.nombre}}</td>
-                            <td>{{cliente.cif}}</td>
-                            <td>{{cliente.direccion}}</td>
-                            <p>Fecha de cita: {{ cliente.fechaCita }}</p>
-                            <p>Hora de cita: {{ cliente.horaCita }}</p>
+                            <td>{{cliente.apellidos}}</td>
+                            <td>{{cliente.telefono}}</td>
+                            <td>{{cliente.correo}}</td>
+                            <td>{{ cliente.fechaCita }}</td>
+                            <td>{{ cliente.horaCita }}</td>
                         </tr>
                     }
                 </tbody>
