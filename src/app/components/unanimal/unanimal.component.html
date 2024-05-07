@@ -1,23 +1,23 @@
 <div class="contenedor">
     <div class="hijo">
-        <h1 class="animate_animated animate_bounce">{{animal.name}} </h1>
+        <h1 class=" title animate_animated animate_bounce">{{animal.name}} </h1>
         <hr>
         <div class="row">
             <div class="col-md-4 text-center">
                 <img src="{{animal.image}}" alt="Animal Image" class="img-fluid">
                 <br><br>
-                <a href="/animales" class="btn btn-danger btn-block m-2">Regresar</a>
-                <a href="/registrar" class="btn btn-danger btn-block m-2">Adoptar</a>
+                <a href="/animales" class="text btn btn-danger btn-block m-2">Regresar</a>
+                <a href="/registrar" class="text btn btn-danger btn-block m-2">Adoptar</a>
             </div>
         
             <div class="col-md-8">
-                <h3>Nombre: {{animal.race}}</h3>
-                <h3>Edad:{{animal.age}}</h3>
-                <h3>Color: {{animal.color}}</h3>
-                <h3>Tiempo en el refugio:{{animal.time_at_the_shelter}}</h3>
+                <h3 class="text">Nombre: {{animal.race}}</h3>
+                <h3 class="text">Edad:{{animal.age}}</h3>
+                <h3 class="text">Color: {{animal.color}}</h3>
+                <h3 class="text">Tiempo en el refugio:{{animal.time_at_the_shelter}}</h3>
                 <hr>
                 <br>
-                <h4>{{animal.description}}</h4>
+                <h4 class="text">{{animal.description}}</h4>
             </div>
         </div>
     </div>
