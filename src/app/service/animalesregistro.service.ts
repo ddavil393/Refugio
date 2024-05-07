@@ -11,7 +11,12 @@
 
 
     constructor() {
-      this.clientes=JSON.parse(localStorage.getItem("data") || '[]');
+      if (typeof localStorage !== 'undefined') {
+        this.clientes = JSON.parse(localStorage.getItem("data") || '[]');
+      } else {
+        
+        this.clientes = [];
+      }
 
     }
 
