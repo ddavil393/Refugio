@@ -1,6 +1,5 @@
 #principal {
     display: flex;
-    /*place-items: center;*/
     text-align: center;
     align-items: start;
     justify-content: space-evenly;
@@ -17,7 +16,6 @@
 .card-title {
     font-size: 20px;
     color: #333;
-
 }
 
 .card-text {
@@ -34,4 +32,24 @@ h1 {
 h2 {
     font-size: 24px;
     color: #666;
+}
+.title{
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.text{
+    font-family: "Ubuntu Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.btn{
+    border-color: #074173;
+    border-width: large;
+    color: #074173;
+}
+
+.btn:hover{
+    color: white;
+    background-color: #1679AB;
 }

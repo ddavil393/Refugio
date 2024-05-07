@@ -1,0 +1,32 @@
+#container2{
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 90px;
+    margin: 175px;
+    box-shadow: 0px 0px 20px 0px rgba(49, 123, 226, 0.5);
+    font-size: 35px;
+    text-align: center;
+}
+.title{
+    font-size: 55px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #12507a;
+    padding-top: .3%;
+}
+.table{
+    margin-top: 6%;
+    padding-top: 5%;
+}
+.title3{
+    color: #12507a;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.text{
+    font-family: "Ubuntu Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 105%;
+}

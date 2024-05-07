@@ -1,14 +1,14 @@
 <div id="principal" class="row">
   @for (h of misanimales; track h; let i =$index){
     <div class="card shadow col-sm-2">
-      <img src="{{h.image}}" class="card-img-top" alt="{{h.name}}">
+      <img src="{{h.image}}" class=" card-img-top" alt="{{h.name}}">
         <div class="card-body">
           <h5 class="card-title">Raza: {{h.name}}</h5>
           <p class="card-text">Nombre: {{h.race}}</p>
           <p class="card-text">Edad: {{h.age}}</p>
           <p class="card-text">Color: {{h.color}}</p>
         </div>
-          <a [routerLink]="['/animales',i]" class="mb-3 btn btn-outline-primary btn-block">Ver mas</a>
+          <a [routerLink]="['/animales',i]" class="text mb-3 btn btn-outline-primary btn-block">Ver mas</a>
     </div>
   }
         <!-- @for (item of array; track item){
