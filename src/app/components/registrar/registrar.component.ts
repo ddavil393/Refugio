@@ -1,15 +1,17 @@
 import { Component } from '@angular/core';
-import { Cliente,} from '../../interface/animalregistro';
 import { AnimalesregistroService} from '../../service/animalesregistro.service'
 import { FormsModule } from '@angular/forms';
+import { ClientRequest } from 'http';
+import { Cliente } from '../../interface/animalregistro';
 
 @Component({
   selector: 'app-registrar',
   standalone: true,
-  imports: [FormsModule,],
+  imports: [FormsModule],
   templateUrl: './registrar.component.html',
   styleUrl: './registrar.component.css'
 })
+
 export class RegistrarComponent {
   cliente!:Cliente;
   citasPasadas: Cliente[] = [];
