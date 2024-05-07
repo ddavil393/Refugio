@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Cliente } from '../../interface/animalregistro';
 import { AnimalesregistroService } from '../../service/animalesregistro.service';
-
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-citasregistras',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './citasregistras.component.html',
   styleUrl: './citasregistras.component.css'
 })
