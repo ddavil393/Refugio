@@ -17,7 +17,7 @@ export class SearchComponent {
   indice:number=0;
 
   mianimal:Animal={
-    id: 0,
+
     name: "",
     age: "",
     color: "",
@@ -30,11 +30,11 @@ export class SearchComponent {
   constructor(private animalService: AnimalesService,private activatedRouted:ActivatedRoute){
     this.activatedRouted.params.subscribe(params => {
       this.nameh=params['nameh'];
-      this.indice=this.animalService.searchUnHeroe(this.nameh);
+      this.indice=this.animalService.searchUnAnimal(this.nameh);
       console.log(this.indice);
 
       if(this.indice != -1){
-        this.mianimal=this.animalService.getUnHeroe(this.indice);
+        this.mianimal=this.animalService.getUnAnimal(this.indice);
       }
 
     });

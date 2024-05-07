@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { take } from 'rxjs'
 import { Animal } from '../interface/lanimal';
 import { ANIMAL } from '../interface/misanimales';
+import { raceInit } from 'rxjs/internal/observable/race';
 
 
 
@@ -27,12 +28,12 @@ export class AnimalesService {
     return this.animal;
   }
 
-  getUnHeroe(posicion:number):Animal{
+  getUnAnimal(posicion:number):Animal{
     return this.animal[posicion];
   }
 
-  searchUnHeroe(nomanimal:string):number{
-    let index = this.animal.findIndex(p=> p.name === nomanimal);
+  searchUnAnimal(nameanimal:string):number{
+    let index = this.animal.findIndex(p=> p.name=== nameanimal);
     return index;
   }
   
