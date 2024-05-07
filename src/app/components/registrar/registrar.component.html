@@ -1,28 +1,37 @@
 <div class="cont">
     <div class="container">
-        <h1 class="title1">Formulario de adopción</h1>
+        <h2>Formulario de adopción</h2>
         <p>
-            <span class="title" id="name">Nombre:</span>
+            <span>Nombre:</span>
             <input type="text" class="form-control" [(ngModel)]="cliente.nombre">
         </p>
-        <!--<p>
-            <span class="title">ID:</span>
-            <input type="text" class="form-control" [(ngModel)]="cliente.cif">
-        </p>-->
         <p>
-            <span class="title">Dirección:</span>
+            <span>Apellidos:</span>
+            <input type="text" class="form-control" [(ngModel)]="cliente.apellidos">
+        </p>
+        <p>
+            <span>Telefono:</span>
+            <input type="text" class="form-control" [(ngModel)]="cliente.telefono">
+        </p>
+        <p>
+            <span>Correo electronico:</span>
             <input type="text" class="form-control" [(ngModel)]="cliente.correo">
         </p>
         <p>
-            <span class="title">Fecha de cita:</span>
+            <span>Fecha de cita:</span>
             <input type="date" class="form-control" [(ngModel)]="cliente.fechaCita">
         </p>
         <p>
-            <span class="title">Hora de cita:</span>
+            <span>Hora de cita:</span>
             <input type="time" class="form-control" [(ngModel)]="cliente.horaCita">
         </p>
+        <!-- <p>
+            <span>Nombre de la mascota</span>
+            <input type="date" class="form-control" [(ngModel)]="cliente.fechaCita">
+        </p> -->
         <p>
             <button type="button" class="btn btn-primary" (click)="nuevoCliente()">Guardar</button>
         </p>
+
     </div>
 </div>

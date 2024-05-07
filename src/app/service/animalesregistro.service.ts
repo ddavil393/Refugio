@@ -10,8 +10,6 @@
     clientes!: Cliente[];
 
 
-
-
     constructor() {
       this.clientes=JSON.parse(localStorage.getItem("data") || '[]');
 
@@ -30,6 +28,7 @@
     }
 
     nuevoCliente(): Cliente{
+      
       return{
 
         nombre: '',

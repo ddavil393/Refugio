@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { AnimalesregistroService} from '../../service/animalesregistro.service'
 import { FormsModule } from '@angular/forms';
-import { ClientRequest } from 'http';
 import { Cliente } from '../../interface/animalregistro';
 
 @Component({
@@ -30,17 +29,13 @@ export class RegistrarComponent {
         cliente => cliente.fechaCita === this.cliente.fechaCita && cliente.horaCita === this.cliente.horaCita
     );
 
-
     const nuevaFechaHora = new Date(this.cliente.fechaCita + 'T' + this.cliente.horaCita);
-
-
     const fechaActual = new Date();
     if (nuevaFechaHora < fechaActual) {
         alert('Lo sentimos, no puedes registrar una cita en una fecha que ya ha pasado.');
         return;
     }
 
-  
     const citaOcupada = citasExistentes.some(cliente => {
         const fechaHoraExistente = new Date(cliente.fechaCita + 'T' + cliente.horaCita);
         return fechaHoraExistente.getTime() === nuevaFechaHora.getTime();
@@ -52,7 +47,7 @@ export class RegistrarComponent {
       
         this.animalesregistroService.agregarCliente(this.cliente);
         this.cliente = this.animalesregistroService.nuevoCliente();
-        alert('¡Cliente registrado exitosamente!');
+        alert('¡Cita registrada exitosamente!');
     }
 
     

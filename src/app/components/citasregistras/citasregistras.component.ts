@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Cliente } from '../../interface/animalregistro';
 import { AnimalesregistroService } from '../../service/animalesregistro.service';
+
 
 @Component({
   selector: 'app-citasregistras',
@@ -9,19 +10,19 @@ import { AnimalesregistroService } from '../../service/animalesregistro.service'
   templateUrl: './citasregistras.component.html',
   styleUrl: './citasregistras.component.css'
 })
-export class CitasregistrasComponent {
+export class CitasregistrasComponent implements OnInit {
 
-  clientes!: Cliente[];
-  citas: Cliente[] = [];
-  constructor(private animalesregistroService: AnimalesregistroService){}
+  clientes: Cliente[] = [];
 
-  ngOnInit(){
+  constructor(private animalesregistroService: AnimalesregistroService) {}
+
+  ngOnInit(): void {
     this.clientes = this.animalesregistroService.getClientes();
   }
 
   getCitasPasadas(): Cliente[] {
     const fechaActual = new Date();
-    return this.citas.filter(cita => {
+    return this.clientes.filter(cita => {
       const fechaCita = new Date(cita.fechaCita + 'T' + cita.horaCita);
       return fechaCita < fechaActual;
     });
@@ -29,11 +30,9 @@ export class CitasregistrasComponent {
 
   getCitasFuturas(): Cliente[] {
     const fechaActual = new Date();
-    return this.citas.filter(cita => {
+    return this.clientes.filter(cita => {
       const fechaCita = new Date(cita.fechaCita + 'T' + cita.horaCita);
       return fechaCita >= fechaActual;
     });
   }
-  
-
 }
