@@ -1,64 +1,57 @@
 <div id="container2">
-    <h2>Listado clientes por cita</h2>
-    <ng-container *ngIf="clientes && clientes.length > 0; else noClientes">
-      <div>
+    
+    <h2>Listado de citas futuras</h2>
+    <div>
         <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">Nombre</th>
-              <th scope="col">Apellidos</th>
-              <th scope="col">Numero de telefono</th>
-              <th scope="col">Correo</th>
-              <th scope="col">Fecha de cita</th>
-              <th scope="col">Hora de la cita</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let cliente of clientes">
-              <td>{{cliente.nombre}}</td>
-              <td>{{cliente.apellidos}}</td>
-              <td>{{cliente.telefono}}</td>
-              <td>{{cliente.correo}}</td>
-              <td>{{cliente.fechaCita}}</td>
-              <td>{{cliente.horaCita}}</td>
-            </tr>
-          </tbody>
+            <thead>
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellidos</th>
+                    <th scope="col">Numero de telefono</th>
+                    <th scope="col">Correo</th>
+                    <th scope="col">Facha de cita</th>
+                    <th scope="col">Hora de la cita</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (cita of citasFuturas; track citasFuturas) {
+                    <tr>
+                        <td>{{cita.nombre}}</td>
+                        <td>{{cita.apellidos}}</td>
+                        <td>{{cita.telefono}}</td>
+                        <td>{{cita.correo}}</td>
+                        <td>{{cita.fechaCita}}</td>
+                        <td>{{cita.horaCita}}</td>
+                    </tr>
+                }
+            </tbody>
         </table>
-      </div>
-    </ng-container>
-    <ng-template #noClientes>
-      <div>No hay clientes por el momento</div>
-    </ng-template>
-  
-    <h2>Listado de citas pasadas</h2>
-    <div *ngIf="getCitasPasadas().length > 0; else noPasadas">
-      <div>
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">Nombre</th>
-              <th scope="col">Apellidos</th>
-              <th scope="col">Numero de telefono</th>
-              <th scope="col">Correo</th>
-              <th scope="col">Fecha de cita</th>
-              <th scope="col">Hora de la cita</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let cita of getCitasPasadas()">
-              <td>{{cita.nombre}}</td>
-              <td>{{cita.apellidos}}</td>
-              <td>{{cita.telefono}}</td>
-              <td>{{cita.correo}}</td>
-              <td>{{cita.fechaCita}}</td>
-              <td>{{cita.horaCita}}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
     </div>
-    <ng-template #noPasadas>
-      <div>No hay citas pasadas</div>
-    </ng-template>
-  </div>
-  
+    <h2>Listado de citas pasadas</h2>
+    <div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellidos</th>
+                    <th scope="col">Numero de telefono</th>
+                    <th scope="col">Correo</th>
+                    <th scope="col">Facha de cita</th>
+                    <th scope="col">Hora de la cita</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (cita of citasPasadas; track citasPasadas) {
+                    <tr>
+                        <td>{{cita.nombre}}</td>
+                        <td>{{cita.apellidos}}</td>
+                        <td>{{cita.telefono}}</td>
+                        <td>{{cita.correo}}</td>
+                        <td>{{cita.fechaCita}}</td>
+                        <td>{{cita.horaCita}}</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

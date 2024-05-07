@@ -10,14 +10,18 @@ import { CommonModule } from '@angular/common';
   templateUrl: './citasregistras.component.html',
   styleUrl: './citasregistras.component.css'
 })
-export class CitasregistrasComponent implements OnInit {
+export class CitasregistrasComponent {
 
-  clientes: Cliente[] = [];
+  clientes!: Cliente[];
+  citasPasadas: Cliente[] = [];
+  citasFuturas: Cliente[] = [];
 
-  constructor(private animalesregistroService: AnimalesregistroService) {}
+  constructor(private animalesregistroService: AnimalesregistroService){}
 
-  ngOnInit(): void {
+  ngOnInit(){
     this.clientes = this.animalesregistroService.getClientes();
+    this.citasPasadas = this.getCitasPasadas();
+    this.citasFuturas = this.getCitasFuturas();
   }
 
   getCitasPasadas(): Cliente[] {
