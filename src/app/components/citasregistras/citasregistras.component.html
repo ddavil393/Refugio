@@ -1,21 +1,19 @@
 <div id="container2">
-    <h2>
-        Listado clientes por cita
-    </h2>
+    <h2 class="title">Listado clientes por cita</h2>
     @if (!clientes.length) {
         <div>No hay clientes por el momento</div>
     }
     @else {
-        <div>
+        <div class="table2" >
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Apellidos</th>
-                        <th scope="col">Numero de telefono</th>
-                        <th scope="col">Correo</th>
-                        <th scope="col">Facha de cita</th>
-                        <th scope="col">Hora de la cita</th>
+                        <th class="title3" scope="col">Nombre</th>
+                        <th class="title3" scope="col">Apellidos</th>
+                        <th class="title3" scope="col">Numero de teléfono</th>
+                        <th class="title3" scope="col">Correo</th>
+                        <th class="title3" scope="col">Fecha de cita</th>
+                        <th class="title3" scope="col">Hora de la cita</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -32,7 +30,5 @@
                 </tbody>
             </table>
         </div>
-        
     }
-
 </div>
