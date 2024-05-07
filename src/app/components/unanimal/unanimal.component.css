@@ -1,3 +1,21 @@
+.contenedor{
+    position: relative;
+    margin-top: 08%;
+    margin-bottom: 08%;
+    margin-left: 10%;
+}
+.hijo{
+    padding: 02%;
+    width: 50%;
+    height: 70%;
+    background-color: white;
+    position: relative;
+    top: 120%;
+    bottom: 50%;
+    left: 20%;
+    border: dotted  #A0DEFF;
+    border-width:  12px 0 12px;
+}
 .body {
     padding-top: 50px;
     font-family: Arial, sans-serif;
@@ -16,4 +34,11 @@ img {
 
 p {
     font-size: 16px;
+}
+.btn{
+    background-color: #4D869C;
+    border: #A0DEFF;
+}
+.btn:hover{
+    background-color: #3C5B6F;
 }
