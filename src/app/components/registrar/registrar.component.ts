@@ -20,7 +20,7 @@ export class RegistrarComponent {
 
   ngOnInit(){
     this.cliente = this.animalesregistroService.nuevoCliente();
-
+  
   }
 
   nuevoCliente(): void {
