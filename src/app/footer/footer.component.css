@@ -6,7 +6,8 @@
 .text{
     text-align: center;
     color: white;
-    font-size: larger;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Ubuntu Sans", sans-serif;
     font-optical-sizing: auto;
+    font-size: 175%;
+    font-size: x-large;
 }

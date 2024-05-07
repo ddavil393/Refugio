@@ -1,37 +1,50 @@
-.body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    text-align: justify;
-  }
-  .jumbotron {
+.jumbotron {
     background-color: #ffffff;
     border-radius: 10px;
     padding: 50px;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-  }
-  .jumbotron h1 {
+}
+.jumbotron h1 {
     font-size: 3.5rem;
     font-weight: bold;
     color: #333333;
-  }
-  .jumbotron p {
+}
+.jumbotron p {
     font-size: 1.2rem;
     color: #555555;
-  }
-  .jumbotron a.btn-primary {
+}
+.jumbotron a.btn-primary {
     font-size: 1.2rem;
     padding: 10px 30px;
     border-radius: 5px;
     text-transform: uppercase;
     background-color: #007bff;
     border-color: #007bff;
-  }
-  .jumbotron a.btn-primary:hover {
+}
+.jumbotron a.btn-primary:hover {
     background-color: #0056b3;
     border-color: #0056b3;
-  }
+}
 
-img {
+img{
   width: 50%;
   margin-left: 50%;
+}
+.title{
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.container .title{
+  color: #12507a;
+}
+
+.text, .text2{
+  font-family: "Ubuntu Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: justify;
+}
+.text2{
+  color: #63a5c2;
 }
