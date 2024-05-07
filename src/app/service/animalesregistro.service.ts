@@ -8,6 +8,7 @@
   export class AnimalesregistroService {
 
     clientes!: Cliente[];
+    animalid!: Animal[];
 
 
     constructor() {
@@ -28,8 +29,12 @@
     }
 
     agregarCliente(cliente: Cliente){
-      this.clientes.push(cliente);
+      this.clientes.push(cliente)
       localStorage.setItem('data',JSON.stringify(this.clientes));
+    }
+
+    guardarAnimal(animalid:Animal){
+      return this.animalid
     }
 
     nuevoCliente(): Cliente{

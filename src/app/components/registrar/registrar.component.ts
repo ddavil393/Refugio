@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { AnimalesregistroService} from '../../service/animalesregistro.service'
 import { FormsModule } from '@angular/forms';
 import { Cliente } from '../../interface/animalregistro';
+import { Animal } from '../../interface/lanimal';
+import { AnimalesService } from '../../service/animales.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-registrar',
@@ -14,9 +17,19 @@ import { Cliente } from '../../interface/animalregistro';
 export class RegistrarComponent {
   cliente!:Cliente;
   citasPasadas: Cliente[] = [];
+  animal!:Animal;
+  animalID!: number;
 
-
-  constructor(private animalesregistroService: AnimalesregistroService){}
+  constructor(
+    private animalesregistroService: AnimalesregistroService, 
+    public  animalService: AnimalesService, 
+    public activatedRoute: ActivatedRoute
+  ){
+    this.activatedRoute.params.subscribe(params => {
+      this.animal=animalService.getUnAnimal(params ['id']);
+      this.animalID = params['id'];
+    })
+  }
 
   ngOnInit(){
     this.cliente = this.animalesregistroService.nuevoCliente();

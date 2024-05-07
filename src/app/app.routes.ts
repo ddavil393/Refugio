@@ -12,6 +12,7 @@ export const routes: Routes = [
     {path: 'home', component: HomeComponent},
     {path: 'about', component: AboutComponent},
     {path: 'citasregistradas', component: CitasregistrasComponent},
+    {path: 'registrar/:id', component: RegistrarComponent},
     {path: 'registrar', component: RegistrarComponent},
     {path: 'animales', component: AnimalesComponent},
     {path: 'animales/:id', component: UnanimalComponent},

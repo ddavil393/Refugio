@@ -15,6 +15,7 @@ export class CitasregistrasComponent {
   clientes!: Cliente[];
   citasPasadas: Cliente[] = [];
   citasFuturas: Cliente[] = [];
+  
 
   constructor(private animalesregistroService: AnimalesregistroService){}
 

@@ -25,10 +25,18 @@
             <span>Hora de cita:</span>
             <input type="time" class="form-control" [(ngModel)]="cliente.horaCita">
         </p>
-        <!-- <p>
+        <p>
             <span>Nombre de la mascota</span>
-            <input type="date" class="form-control" [(ngModel)]="cliente.fechaCita">
-        </p> -->
+            <input type="text" class="form-control" [(ngModel)]="animal.race" disabled="">
+        </p>
+        <p>
+            <span>Color:</span>
+            <input type="text" class="form-control" [(ngModel)]="animal.color" disabled="">
+        </p>
+        <p>
+            <span>Especie:</span>
+            <input type="text" class="form-control" [(ngModel)]="animal.name" disabled="">
+        </p>
         <p>
             <button type="button" class="btn btn-primary" (click)="nuevoCliente()">Guardar</button>
         </p>

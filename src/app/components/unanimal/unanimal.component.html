@@ -7,7 +7,7 @@
                 <img src="{{animal.image}}" alt="Animal Image" class="img-fluid">
                 <br><br>
                 <a href="/animales" class="btn btn-danger btn-block m-2">Regresar</a>
-                <a href="/registrar" class="btn btn-danger btn-block m-2">Adoptar</a>
+                <a [routerLink]="['/registrar', animalID]" class="btn btn-danger btn-block m-2">Adoptar</a>
             </div>
         
             <div class="col-md-8">
