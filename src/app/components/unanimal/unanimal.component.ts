@@ -15,7 +15,7 @@ export class UnanimalComponent {
   @Input()animal!:Animal;
   constructor(public  animalService: AnimalesService, public activatedRoute: ActivatedRoute){
     this.activatedRoute.params.subscribe(params => {
-      this.animal=animalService.getUnHeroe(params ['id']);
+      this.animal=animalService.getUnAnimal(params ['id']);
     })
   }
 
