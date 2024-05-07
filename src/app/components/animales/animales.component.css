@@ -1,6 +1,5 @@
 #principal {
     display: flex;
-    /*place-items: center;*/
     text-align: center;
     align-items: start;
     justify-content: space-evenly;
@@ -17,7 +16,6 @@
 .card-title {
     font-size: 20px;
     color: #333;
-
 }
 
 .card-text {
