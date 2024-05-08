@@ -1,12 +1,11 @@
 <div id="principal">
-    <h1>Lista de productos</h1>
-    <h2>Edgar Alejandro Cedeño Suarez</h2>
+    <h1>Nuestras mascotas</h1>
 
     <div class="card-group row row-cols-1 row-cols-md-3 g-4">
         @for (item of array;track item){
             <div class="col">
                 <div class="card h-100">
-                    <img [src]="item.image" class="img-fluid" style="width: 50%; height: 50%;" alt="">
+                    <!-- <img [src]="item.image" class="img-fluid" style="width: 50%; height: 50%;" alt=""> -->
                     <div class="card-body">
                         <h5 class="card-title">{{item.name}}</h5>
                         <p class="card-text">{{item.description}}</p>
