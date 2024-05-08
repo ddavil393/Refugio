@@ -16,22 +16,75 @@
   <div class="matgrid" >
   <mat-grid-list cols="4" rowHeight="2:2">
     <mat-grid-tile><img src="../../../assets/img/Refugio_img2.jpeg" alt=""></mat-grid-tile>
-    <mat-grid-tile><img src="../../../assets/img/Peritos_refugio.jpeg" alt=""></mat-grid-tile>
+    <mat-grid-tile><img src="../../../assets/img/Monkeys.jpeg" alt=""></mat-grid-tile>
     <mat-grid-tile><img src="../../../assets/img/Refugio.jpg" alt=""></mat-grid-tile>
-    <mat-grid-tile><img src="../../../assets/img/Peritos_refugio.jpeg" alt=""></mat-grid-tile>
+    <mat-grid-tile><img src="../../../assets/img/Medico.jpeg" alt=""></mat-grid-tile>
   </mat-grid-list>
   </div>
 
-  <div>
-    <span>hola</span>
+  <br>
+  <span><hr></span>
+  <br>
+
+  <div class="frame">
+    <iframe
+      width="560" height="315" [src]="video | domseguro: 'https://www.youtube.com/embed/' " frameBorder="0"
+      allow="acelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
   </div>
 
   <br>
-  <iframe
-  width="560"
-  height="315"
-  [src]="video | domseguro: 'https://www.youtube.com/embed/' "
-  frameBorder="0"
-  allow="acelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen></iframe>
+  <span><hr></span>
+  <br>
+
+  <div class="panel">
+    <h1 class="title text-center">Que encontraras con nosotros?? </h1>
+    <mat-accordion>
+      <mat-expansion-panel hideToggle style="background-color: #4793AF;">
+        <mat-expansion-panel-header>
+          <mat-panel-title class="text">
+            Animales de Selva
+          </mat-panel-title>
+          <mat-panel-description class="text">
+            Por que ellos?? 
+            <br>
+            Desplejemos 
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p class="text">Son componentes fundamentales de ecosistemas vitales para el funcionamiento del planeta y para el bienestar humano. Su conservación es esencial para garantizar un futuro sostenible para todas las formas de vida en la Tierra.</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                           (closed)="panelOpenState = false" style="background-color: #4793AF;">
+        <mat-expansion-panel-header>
+          <mat-panel-title class="text" >
+            Self aware panel
+          </mat-panel-title>
+          <mat-panel-description class="text" >
+            Currently I am {{panelOpenState ? 'open' : 'closed'}}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p class="text">Nos brindan amor, compañerismo, beneficios para la salud y enseñanzas valiosas. Además, pueden desempeñar roles prácticos en la seguridad y protección de nuestros hogares, así como en el apoyo emocional y la conexión con la naturaleza.</p>
+      </mat-expansion-panel>
+    </mat-accordion>    
+  </div>
+  
+  <br>
+  <span><hr></span>
+  <br>
+
+  <div class="cont">
+    <div class="tab">
+      <mat-tab-group>
+        <mat-tab label="Perritos"> <img src="../../../assets/img/Perritos_Comiendo.jpeg" alt=""> </mat-tab>
+        <mat-tab label="Animales"> <img src="../../../assets/img/Conexion.jpeg" alt=""> </mat-tab>
+        <mat-tab label="Conejos"> <img src="../../../assets/img/Conejo.jpg" alt=""></mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+  
+  <br>
+  <span><hr></span>
+  <br>
+
 </div>
