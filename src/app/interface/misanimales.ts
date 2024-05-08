@@ -1,9 +1,6 @@
 import { Animal } from "./lanimal";
-
 export const ANIMAL: Animal[]=[
-    
         {
-
         "name":"Buitre",
         "age": "40",
         "color": " Gris",
@@ -70,7 +67,7 @@ export const ANIMAL: Animal[]=[
         "race":" Nick ",
         "time_at_the_shelter":" 20 años ",
         "description": " Nick fue cazado de la forma más cruel, pensaron que lo dejaron muerto y un ciudadano nos lo trajo para que lo ayudaramos y no muriera. ",
-        "image": "https://static.wikia.nocookie.net/reinoanimalia/images/8/88/Zorro_rojo_4.png/revision/latest?cb=20130514223627&path-prefix=es"
+        "image": "https://amuraworld.com/images/articles/115-st-andrews/01-fulltext/144-zorro.jpg"
         },
      {
 
@@ -129,7 +126,7 @@ export const ANIMAL: Animal[]=[
         "race":"Nasky",
         "time_at_the_shelter":" 3 años",
         "description": " Nasky fue encontrada por un ciudadano que la trajo con nosotros ya que estaban apunto de comersela otro perros y no se podia defender tan pequeña.",
-        "image": "https://es.wikipedia.org/wiki/Archivo:Cattledog_Little_Joe.JPG"
+        "image": "https://cdn.dogsplanet.com/wp-content/uploads/2023/04/pastor-australiano-tumbado-en-el-bosque.jpg.webp"
         },
      {
   

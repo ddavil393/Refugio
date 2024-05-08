@@ -1,18 +1,18 @@
 <div id="container2">
     
     <h2>Listado de citas futuras</h2>
-    <div>
+    <div class="table2" >
         <table class="table table-striped">
-            <thead>
+            <thead class="title_3">
                 <tr>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Apellidos</th>
-                    <th scope="col">Numero de telefono</th>
-                    <th scope="col">Correo</th>
-                    <th scope="col">Facha de cita</th>
-                    <th scope="col">Hora de la cita</th>
-                    <th scope="col">Nombre de la mascota</th>
-                    <th scope="col">Imagen</th>
+                    <th class="title3" scope="col">Nombre</th>
+                    <th class="title3" scope="col">Apellidos</th>
+                    <th class="title3" scope="col">Numero de telefono</th>
+                    <th class="title3" scope="col">Correo</th>
+                    <th class="title3" scope="col">Facha de cita</th>
+                    <th class="title3" scope="col">Hora de la cita</th>
+                    <th class="title3" scope="col">Nombre de la mascota</th>
+                    <th class="title3" scope="col">Imagen</th>
                 </tr>
             </thead>
             <tbody>
@@ -45,7 +45,7 @@
             </thead>
             <tbody>
                 @for (cita of citasPasadas; track citasPasadas) {
-                    <tr>
+                    <tr class="tr1" >
                         <td>{{cita.nombre}}</td>
                         <td>{{cita.apellidos}}</td>
                         <td>{{cita.fechaCita}}</td>

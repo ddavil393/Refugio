@@ -5,11 +5,15 @@ import { Cliente } from '../../interface/animalregistro';
 import { Animal } from '../../interface/lanimal';
 import { AnimalesService } from '../../service/animales.service';
 import { ActivatedRoute } from '@angular/router';
+import { MatNativeDateModule } from '@angular/material/core';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 @Component({
   selector: 'app-registrar',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, MatNativeDateModule, MatFormFieldModule,MatInputModule, MatDatepickerModule],
   templateUrl: './registrar.component.html',
   styleUrl: './registrar.component.css'
 })

@@ -13,19 +13,6 @@
     font-size: 1.2rem;
     color: #555555;
 }
-.jumbotron a.btn-primary {
-    font-size: 1.2rem;
-    padding: 10px 30px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    background-color: #007bff;
-    border-color: #007bff;
-}
-.jumbotron a.btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-}
-
 img{
   width: 50%;
   margin-left: 50%;
@@ -38,7 +25,6 @@ img{
 .container .title{
   color: #12507a;
 }
-
 .text, .text2{
   font-family: "Ubuntu Sans", sans-serif;
   font-optical-sizing: auto;
@@ -47,4 +33,18 @@ img{
 }
 .text2{
   color: #63a5c2;
+}
+.matgrid{
+  margin-top: 4%;
+  padding: 4%;
+  box-shadow: 0px 0px 20px 0px rgb(33, 155, 211);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-left: 0;
+  padding-left: 2%;
+  padding-right: 2%;
 }

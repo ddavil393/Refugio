@@ -1,45 +1,52 @@
 <div class="cont">
     <div class="container">
-        <h2>Formulario de adopción</h2>
+        <h2 class="title1" >Formulario de adopción</h2>
         <p>
-            <span>Nombre:</span>
-            <input type="text" class="form-control" [(ngModel)]="cliente.nombre">
+            <spanc class="title" >Nombre:</spanc>
+            <input type="text" class="title form-control" [(ngModel)]="cliente.nombre">
         </p>
         <p>
-            <span>Apellidos:</span>
-            <input type="text" class="form-control" [(ngModel)]="cliente.apellidos">
+            <span class="title" >Apellidos:</span>
+            <input type="text" class="title form-control" [(ngModel)]="cliente.apellidos">
         </p>
         <p>
-            <span>Telefono:</span>
-            <input type="text" class="form-control" [(ngModel)]="cliente.telefono">
+            <span class="title">Teléfono:</span>
+            <input type="text" class="title form-control" [(ngModel)]="cliente.telefono">
         </p>
         <p>
-            <span>Correo electronico:</span>
-            <input type="text" class="form-control" [(ngModel)]="cliente.correo">
+            <span class="title" >Correo eléctronico:</span>
+            <input type="text" class="title form-control" [(ngModel)]="cliente.correo">
         </p>
         <p>
-            <span>Fecha de cita:</span>
-            <input type="date" class="form-control" [(ngModel)]="cliente.fechaCita">
+            <span class="title" >Fecha de cita:</span>
+            <!--<input type="date" class="title form-control" [(ngModel)]="cliente.fechaCita">-->
+            <div class="pt-2 pb-3">
+                <mat-form-field>
+                    <mat-label>Choose a date</mat-label>
+                    <input matInput [matDatepicker]="picker" [(ngModel)]="cliente.fechaCita" >
+                    <mat-hint>MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+            </div>
         </p>
         <p>
-            <span>Hora de cita:</span>
+            <span class="title">Hora de cita:</span>
             <input type="time" class="form-control" [(ngModel)]="cliente.horaCita">
         </p>
         <p>
-            <span>Nombre de la mascota</span>
-            <input type="text" class="form-control" [(ngModel)]="animal.race" disabled="">
+            <span class="title">Nombre de la mascota</span>
+            <input type="text" class="title form-control" [(ngModel)]="animal.race" disabled="">
         </p>
         <p>
-            <span>Color:</span>
-            <input type="text" class="form-control" [(ngModel)]="animal.color" disabled="">
+            <span class="title" >Color:</span>
+            <input type="text" class="title form-control" [(ngModel)]="animal.color" disabled="">
         </p>
         <p>
-            <span>Especie:</span>
-            <input type="text" class="form-control" [(ngModel)]="animal.name" disabled="">
+            <span class="title" >Especie:</span>
+            <input type="text" class="title form-control" [(ngModel)]="animal.name" disabled="">
         </p>
         <p>
-            <button type="button" class="btn btn-primary" (click)="nuevoCliente()">Guardar</button>
+            <button type="button" class="title btn btn-primary" (click)="nuevoCliente()">Guardar</button>
         </p>
-
-    </div>
 </div>
