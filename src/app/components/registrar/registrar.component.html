@@ -2,7 +2,7 @@
     <div class="container">
         <h2 class="title1" >Formulario de adopción</h2>
         <p>
-            <spanc class="title" >Nombre:</spanc>
+            <span class="title" >Nombre:</span>
             <input type="text" class="title form-control" [(ngModel)]="cliente.nombre">
         </p>
         <p>
@@ -17,7 +17,7 @@
             <span class="title" >Correo eléctronico:</span>
             <input type="text" class="title form-control" [(ngModel)]="cliente.correo">
         </p>
-        <p>
+        <!--<p>-->
             <span class="title" >Fecha de cita:</span>
             <!--<input type="date" class="title form-control" [(ngModel)]="cliente.fechaCita">-->
             <div class="pt-2 pb-3">
@@ -29,7 +29,7 @@
                     <mat-datepicker #picker></mat-datepicker>
                 </mat-form-field>
             </div>
-        </p>
+        <!--</p>-->
         <p>
             <span class="title">Hora de cita:</span>
             <input type="time" class="form-control" [(ngModel)]="cliente.horaCita">
