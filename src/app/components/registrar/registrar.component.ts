@@ -9,6 +9,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-registrar',
@@ -23,6 +24,34 @@ export class RegistrarComponent {
   citasPasadas: Cliente[] = [];
   animal!:Animal;
   animalID!: number;
+
+  showModal(){
+    Swal.fire({
+      title: "Bieen hecho",
+      text: "Cita registrada exitosamente",
+      icon: "success"
+    });
+}
+
+  showModal2(){
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Lo sentimos, no puedes registrar una cita en una fecha que ya ha pasado.",
+      footer: '-'
+    });
+  }
+
+  showModal3(){
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Lo sentimos, esta fecha y hora ya están ocupadas. Por favor, elige otra.'",
+      footer: '-'
+    });
+  }
+
+
 
   constructor(
     private animalesregistroService: AnimalesregistroService, 
@@ -49,7 +78,7 @@ export class RegistrarComponent {
     const nuevaFechaHora = new Date(this.cliente.fechaCita + 'T' + this.cliente.horaCita);
     const fechaActual = new Date();
     if (nuevaFechaHora < fechaActual) {
-        alert('Lo sentimos, no puedes registrar una cita en una fecha que ya ha pasado.');
+      this.showModal2();
         return;
     }
 
@@ -59,12 +88,12 @@ export class RegistrarComponent {
     });
 
     if (citaOcupada) {
-        alert('Lo sentimos, esta fecha y hora ya están ocupadas. Por favor, elige otra.');
+      this.showModal3();
     } else {
       
         this.animalesregistroService.agregarCliente(this.cliente);
         this.cliente = this.animalesregistroService.nuevoCliente();
-        alert('¡Cita registrada exitosamente!');
+        this.showModal();
     }
 
     
